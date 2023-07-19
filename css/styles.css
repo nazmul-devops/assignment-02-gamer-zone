@@ -1,0 +1,92 @@
+:root {
+  --paragaraph-text-color: #534c64;
+  --primary-color: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+
+/* Nav bar Design  */
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 130px;
+  align-items: center;
+}
+
+.logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_image img {
+  width: 86px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.logo_container h1 {
+  color: #0b0223;
+  font-size: 45px;
+  font-weight: 700;
+  width: 147px;
+  height: 53px;
+}
+.logo_container h1 span {
+  background: var(--primary-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu ul {
+  display: flex;
+  align-items: center;
+}
+.menu ul li {
+  list-style: none;
+  margin-left: 32px;
+}
+.menu li a {
+  text-decoration: none;
+  color: var(--paragaraph-text-color);
+}
+
+.menu .follow {
+  width: max-content;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+  padding: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.follow img {
+    margin-left: 16px;
+}
+
+
+/* Responsive Design  */
+
+@media screen and (min-width: 390px) and (max-width: 576px) {
+    nav, .menu ul{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu li {
+        margin-top: 30px;
+    }
+
+    .logo_container, .menu {
+        width: 100%;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+}
