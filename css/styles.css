@@ -492,6 +492,10 @@ nav {
   .banner_container {
     flex-direction: column-reverse;
   }
+  .left_content_container {
+    width: 90%;
+    padding: 10px 0 50px 50px;
+  }
 
   .menu li {
     margin-top: 30px;
@@ -542,19 +546,29 @@ nav {
     margin-bottom: 0;
   }
   .play_instant_right img {
+    width: 90%;
+    margin: auto;
+    position:static;
+    padding: 10px;
   }
   .relative {
-    position: relative;
-    left: 400px;
-    top: 800px;
+   width: 90%;
+   position: static;
   }
 
   .relative2 {
-    position: relative;
-    right: 180px;
-    top: 140px;
+    width: 90%;
+    margin: auto;
+    position: static;
   }
+.play_instant_left  {
+  text-align: center;
+  margin: auto;
+}
 
+.play_instant_left h1 br {
+  display: none;
+}
   .footer_container {
     width: 100%;
   }
