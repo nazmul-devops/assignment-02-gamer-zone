@@ -311,6 +311,104 @@ nav {
   top: 140px;
 }
 
+/* Career Section Design  */
+
+.career {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%);
+  margin-top: 255px;
+  padding: 0;
+}
+
+.career_left {
+}
+
+.career_left h1 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px; /* 125% */
+}
+.career_left p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  margin-bottom: 32px;
+  margin-top: 24px;
+}
+
+.career_right img {
+  width: 900px;
+  height: auto;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40p;
+}
+.left_list p{
+  text-align: left;
+  color: #fff;
+}
+
+.right_list p {
+  text-align: right;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.list li a {
+  text-decoration: none;
+  color: #fff;
+}
+.career_button {
+  background-color: #fff;
+  color: #ff42a5;
+  padding: 21px 40px;
+  margin-top: 40px;
+}
+
+/* Game Name Box Design  */
+.game_name_icons {
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 120px 0;
+}
+
+.game_name_icon_5 {
+  margin-bottom: 28px;
+}
+.game_name_box {
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50px;
+}
+
+.game_name_box:hover {
+  border: 2px solid #ff42a5;
+  color: #ff42a5;
+}
+
+.game_name_box img {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+.game_name_box p {
+  align-items: center;
+  padding: 28px 18px;
+
+}
+
 /* Footer Section Design  */
 
 .footer_container {
@@ -371,8 +469,25 @@ nav {
   .menu ul,
   .banner_container,
   .we_are_gamer,
-  .games_card_container, .play_instant, .play_online {
+  .games_card_container,
+  .play_instant,
+  .play_online, .career, .list{
     flex-direction: column;
+    height: auto;
+  }
+  .career > * {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  .game_name_icons {
+    width: 100%;
+    margin: 20px auto;
+  }
+
+  .left_list, .right_list {
+    width: 90%;
+    margin: auto;
   }
   .banner_container {
     flex-direction: column-reverse;
@@ -419,18 +534,21 @@ nav {
     margin: 0 auto;
   }
 
+  .career_right img {
+    width: 100%;
+    height: auto;
+  }
   .play_instant_left {
     margin-bottom: 0;
   }
-  .play_instant_right img{
-
-      }
+  .play_instant_right img {
+  }
   .relative {
     position: relative;
     left: 400px;
     top: 800px;
   }
-  
+
   .relative2 {
     position: relative;
     right: 180px;
