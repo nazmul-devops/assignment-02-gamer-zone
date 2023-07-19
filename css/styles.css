@@ -123,7 +123,6 @@ nav {
   text-transform: lowercase;
 }
 
-
 .sign_in {
   display: inline-flex;
   padding: 21px 40px;
@@ -151,22 +150,72 @@ nav {
   text-transform: uppercase;
 }
 
-
 .right_content img {
-    width: 600px;
-    padding-right: 180px;
+  width: 600px;
+  padding-right: 180px;
 }
 
-.left_text_content {
-    
+/* We are gamer section design  */
+.we_are_gamer {
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  text-align: right;
 }
 
+.gamer_left {
+}
+
+.gamer_right {
+  padding-right: 180px;
+}
+
+.gamer_right h1 {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.gamer_right p {
+  color: var(--paragaraph-text-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  margin-bottom: 32px;
+}
+.gamer_right button {
+  margin-bottom: 24px;
+}
+
+.gamer_right .purpose {
+  color: var(--paragaraph-text-color);
+font-size: 24px;
+font-weight: 500;
+line-height: 45px; /* 187.5% */
+}
+.gamer_right .purpose span {
+  color: var(--paragaraph-text-color);
+font-size: 32px;
+font-weight: 700;
+line-height: 45px; /* 187.5% */
+}
 
 /* Responsive Design  */
 
 @media screen and (min-width: 375px) and (max-width: 576px) {
   nav,
-  .menu ul, .banner_container {
+  .menu ul,
+  .banner_container, .we_are_gamer {
     flex-direction: column;
     height: auto;
     margin-bottom: 30px;
@@ -190,17 +239,25 @@ nav {
     width: 100%;
   }
   .left_text_content {
-   
   }
   .left_content_container img {
-    width:100%;
+    width: 100%;
   }
 
   .right_content img {
     width: 90%;
     margin: 10px auto;
     padding: 20px;
-  }  
+  }
 
+  .gamer_left img{
+    width: 90%;
+    margin: auto;
+  }
 
+  .gamer_right {
+    padding-right: 20px;
+    width: 90%;
+    margin: auto;
+  }
 }
