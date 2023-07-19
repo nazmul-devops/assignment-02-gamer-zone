@@ -210,15 +210,113 @@ font-weight: 700;
 line-height: 45px; /* 187.5% */
 }
 
+/* Online Games Section design  */
+
+.online_games {
+
+}
+
+.online_games h1 {
+  color: #0B0223;
+text-align: center;
+font-size: 48px;
+font-weight: 700;
+margin-top: 120px;
+}
+
+.online_games h1 span {
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 48px;
+font-weight: 700;
+}
+
+.online_games p {
+  color: var(--paragaraph-text-color);
+font-size: 18px;
+font-weight: 400;
+line-height: 30px; /* 150% */
+text-align: center;
+margin-bottom: 48px;
+}
+
+.games_card_container {
+  display: flex;
+  justify-content: center;
+
+}
+
+.game_card {
+  margin-right: 24px;
+}
+
+.game_card p {
+  text-align: left;
+  margin-top: 24px;
+}
+
+/* Footer Section Design  */
+
+.footer_container {
+  background-color:#0B0223;
+  padding: 120px auto;
+  color: #fff;
+  text-align: center;
+}
+
+.footer_logo {
+  padding-top: 120px;
+}
+.footer_h1 h1{
+  color: #fff;
+}
+
+.footer_li ul, .footer_link2 ul{
+  display: flex;
+  justify-content: center;
+  margin: 66px auto;
+}
+.footer_li li, .footer_link2 li  {
+  list-style: none;
+  margin-right: 60px;
+}
+
+.footer_li li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer_link2 li a, .footer_container p {
+  color: rgba(255, 255, 255, 0.60);
+font-size: 16px;
+font-weight: 500;
+text-decoration: none;
+}
+
+.footer_social  {
+  display: flex;
+  justify-content: center;
+}
+.footer_social svg {
+  margin-right: 40px;
+}
+
+.footer_container p {
+  padding-bottom: 120px;
+}
+
+
+
 /* Responsive Design  */
 
 @media screen and (min-width: 375px) and (max-width: 576px) {
   nav,
   .menu ul,
-  .banner_container, .we_are_gamer {
+  .banner_container, .we_are_gamer, .games_card_container {
     flex-direction: column;
     height: auto;
-    margin-bottom: 30px;
   }
   .banner_container {
     flex-direction: column-reverse;
@@ -260,4 +358,32 @@ line-height: 45px; /* 187.5% */
     width: 90%;
     margin: auto;
   }
+
+  .game_card {
+    margin: 0 auto;
+  }
+
+  .footer_container {
+    width: 100%;
+  }
+
+  .footer_li ul, .footer_social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 50px;
+  }
+  .footer_link2 ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 40px;
+  }
+
+  .footer_li li, .footer_link2 li  {
+    margin-bottom: 30px;
+  }
+
+  .footer_social svg {
+    margin-bottom: 30px;
+  }
+  
 }
